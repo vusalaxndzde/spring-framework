@@ -16,6 +16,4 @@ public class HelloWorldController {
         return "Run a hard 5k!";
     }
 
-    
-
 }
