@@ -15,6 +15,5 @@ public class HelloWorldController {
     public String workout() {
         return "Run a hard 5k!";
     }
-
     
 }
