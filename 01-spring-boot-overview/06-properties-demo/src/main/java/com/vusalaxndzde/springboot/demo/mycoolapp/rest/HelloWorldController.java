@@ -9,7 +9,7 @@ public class HelloWorldController {
 
     @Value("${player.name}")
     private String playerName;
-    
+
     @Value("${team.name}")
     private String teamName;
 
