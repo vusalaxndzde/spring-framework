@@ -1,4 +1,4 @@
-package com.vusalaxndzde.springcoredemo.common;
+package com.vusalaxndzde.util;
 
 public interface Coach {
 

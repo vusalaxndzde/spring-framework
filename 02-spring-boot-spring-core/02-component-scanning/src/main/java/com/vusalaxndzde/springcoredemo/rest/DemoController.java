@@ -1,6 +1,6 @@
 package com.vusalaxndzde.springcoredemo.rest;
 
-import com.vusalaxndzde.springcoredemo.common.Coach;
+import com.vusalaxndzde.util.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
