@@ -1,4 +1,4 @@
-package com.vusalaxndzde.springcoredemo;
+package com.vusalaxndzde.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
