@@ -14,18 +14,18 @@ public class CruddemoApplication {
 
 	@Bean
 	public CommandLineRunner commandLineRunner() {
-		return new CommandLineRunner() {
-			@Override
-			public void run(String... args) throws Exception {
-				System.out.println("Hello World");
-			}
+		return runner -> {
+			System.out.println("Hello World");
 		};
 	}
 
 //	@Bean
-//	public CommandLineRunner commandLineRunner(String[] args) {
-//		return runner -> {
-//			System.out.println("Hello World");
+//	public CommandLineRunner commandLineRunner() {
+//		return new CommandLineRunner() {
+//			@Override
+//			public void run(String... args) throws Exception {
+//				System.out.println("Hello World");
+//			}
 //		};
 //	}
 
