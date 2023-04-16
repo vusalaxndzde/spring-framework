@@ -2,8 +2,6 @@ package com.vusalaxndzde.demo.rest;
 
 import com.vusalaxndzde.demo.entity.Student;
 import jakarta.annotation.PostConstruct;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
