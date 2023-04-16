@@ -1,5 +1,6 @@
 package com.vusalaxndzde.springboot.cruddemo.rest;
 
+import com.vusalaxndzde.springboot.cruddemo.dao.EmployeeDAO;
 import com.vusalaxndzde.springboot.cruddemo.dao.EmployeeDAOJpaImpl;
 import com.vusalaxndzde.springboot.cruddemo.entity.Employee;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,15 +13,15 @@ import java.util.List;
 @RequestMapping("/api")
 public class EmployeeRestController {
 
-    private final EmployeeDAOJpaImpl employeeDAOJpa;
+    private final EmployeeDAO employeeDAO;
 
-    public EmployeeRestController(EmployeeDAOJpaImpl employeeDAOJpa) {
-        this.employeeDAOJpa = employeeDAOJpa;
+    public EmployeeRestController(EmployeeDAO employeeDAO) {
+        this.employeeDAO = employeeDAO;
     }
 
     @GetMapping("/employees")
     public List<Employee> getEmployees() {
-        return employeeDAOJpa.findAll();
+        return employeeDAO.findAll();
     }
 
 }
