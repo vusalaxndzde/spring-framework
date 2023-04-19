@@ -22,7 +22,7 @@ INSERT INTO `users`
 VALUES 
 ('john','{noop}test123',1),
 ('mary','{noop}test123',1),
-('susan','{noop}test123',1);
+('vusal','{noop}test123',1);
 
 
 --
@@ -45,8 +45,8 @@ VALUES
 ('john','ROLE_EMPLOYEE'),
 ('mary','ROLE_EMPLOYEE'),
 ('mary','ROLE_MANAGER'),
-('susan','ROLE_EMPLOYEE'),
-('susan','ROLE_MANAGER'),
-('susan','ROLE_ADMIN');
+('vusal','ROLE_EMPLOYEE'),
+('vusal','ROLE_MANAGER'),
+('vusal','ROLE_ADMIN');
 
 
