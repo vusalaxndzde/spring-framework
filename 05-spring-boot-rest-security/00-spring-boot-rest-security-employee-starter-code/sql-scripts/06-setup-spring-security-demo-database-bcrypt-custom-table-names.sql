@@ -28,7 +28,7 @@ INSERT INTO `members`
 VALUES
 ('john','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1),
 ('mary','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1),
-('susan','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1);
+('vusal','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1);
 
 
 --
@@ -51,6 +51,6 @@ VALUES
 ('john','ROLE_EMPLOYEE'),
 ('mary','ROLE_EMPLOYEE'),
 ('mary','ROLE_MANAGER'),
-('susan','ROLE_EMPLOYEE'),
-('susan','ROLE_MANAGER'),
-('susan','ROLE_ADMIN');
+('vusal','ROLE_EMPLOYEE'),
+('vusal','ROLE_MANAGER'),
+('vusal','ROLE_ADMIN');
