@@ -11,8 +11,6 @@ import jakarta.persistence.Table;
 @Table(name="employee")
 public class Employee {
 
-	// define fields
-	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
@@ -26,10 +24,7 @@ public class Employee {
 	
 	@Column(name="email")
 	private String email;
-	
-		
-	// define constructors
-	
+
 	public Employee() {
 		
 	}
@@ -41,15 +36,12 @@ public class Employee {
 		this.email = email;
 	}
 
-
 	public Employee(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
 
-	// define getter/setter
-	
 	public int getId() {
 		return id;
 	}
@@ -88,16 +80,5 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
-		
+
 }
-
-
-
-
-
-
-
-
-
-
-

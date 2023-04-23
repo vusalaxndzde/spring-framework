@@ -40,18 +40,8 @@ public class EmployeeController {
 	@GetMapping("/list")
 	public String listEmployees(Model theModel) {
 
-		// add to the spring model
 		theModel.addAttribute("employees", theEmployees);
 
 		return "list-employees";
 	}
 }
-
-
-
-
-
-
-
-
-
