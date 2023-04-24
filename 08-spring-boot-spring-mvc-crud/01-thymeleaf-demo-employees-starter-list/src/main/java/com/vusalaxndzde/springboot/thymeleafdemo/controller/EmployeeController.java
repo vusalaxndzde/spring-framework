@@ -21,7 +21,7 @@ public class EmployeeController {
 
 	@GetMapping("/list")
 	public String listEmployees(Model theModel) {
-		theModel.addAttribute("employees", employeeService.findAll());
+		theModel.addAttribute("employees", employeeService.findAllByOrderByLastNameAsc());
 		return "employees/list-employees";
 	}
 
