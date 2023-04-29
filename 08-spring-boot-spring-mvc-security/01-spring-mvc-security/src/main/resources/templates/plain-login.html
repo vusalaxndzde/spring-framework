@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
     <form action="#" th:action="@{/authenticateUser}" method="post">
-        <div>
-            <label for="username">Username:</label>
+        <p>
+            <label class="login-error" for="username">Username:</label>
             <input type="text" id="username" name="username">
-        </div>
-        <div>
+        </p>
+        <p>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password">
+        </p>
+        <div th:if="${param.error}">
+            <p class="login-error">*Sorry, you entered invalid username/password</p>
         </div>
         <input type="submit" value="Login">
     </form>
