@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    <style>
-        .login-error {
-            color: red;
-            font-style: italic;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/demo.css">
 </head>
 <body>
+    <h3 class="login">Login Page</h3>
     <form action="#" th:action="@{/authenticateUser}" method="post">
         <p>
             <label for="username">Username:</label>

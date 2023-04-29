@@ -40,6 +40,7 @@ public class DemoSecurityConfig {
         http
                 .authorizeHttpRequests(configurer ->
                         configurer
+                                .requestMatchers("/css/**").permitAll()
                                 .anyRequest().authenticated())
 
                 .formLogin(form ->
