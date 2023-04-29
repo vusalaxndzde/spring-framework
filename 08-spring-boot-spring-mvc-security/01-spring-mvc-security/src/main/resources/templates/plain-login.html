@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        .login-error {
+            color: red;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <form action="#" th:action="@{/authenticateUser}" method="post">
         <p>
-            <label class="login-error" for="username">Username:</label>
+            <label for="username">Username:</label>
             <input type="text" id="username" name="username">
         </p>
         <p>
@@ -16,7 +21,7 @@
             <input type="password" id="password" name="password">
         </p>
         <div th:if="${param.error}">
-            <p class="login-error">*Sorry, you entered invalid username/password</p>
+            <p class="login-error">* Sorry, you entered invalid username/password</p>
         </div>
         <input type="submit" value="Login">
     </form>
