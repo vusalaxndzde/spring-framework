@@ -1,0 +1,17 @@
+.btn-logout {
+    padding: 13px 23px;
+    margin-top: 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    cursor: pointer;
+    color: dodgerblue;
+    background-color: white;
+    transition: 0.5s;
+}
