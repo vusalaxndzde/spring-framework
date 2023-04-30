@@ -6,3 +6,7 @@
     color: red;
     font-style: italic;
 }
+
+.login-container {
+    margin: 25vh auto;
+}
