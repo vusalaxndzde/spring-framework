@@ -15,6 +15,14 @@
         <br><br>
         Role(s): <span sec:authentication="principal.authorities"></span>
     </p>
+    <p>
+        <a href="/leaders">Leaders group</a>
+        (Only for managers)
+    </p>
+    <p>
+        <a href="/systems">Systems group</a>
+        (Only for admins)
+    </p>
     <form action="#" th:action="@{/logout}" method="post">
         <input type="submit" class="btn-logout" value="Logout">
     </form>
