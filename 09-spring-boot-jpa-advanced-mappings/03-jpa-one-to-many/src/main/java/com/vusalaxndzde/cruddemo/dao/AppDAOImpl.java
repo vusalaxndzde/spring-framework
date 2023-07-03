@@ -1,5 +1,6 @@
 package com.vusalaxndzde.cruddemo.dao;
 
+import com.vusalaxndzde.cruddemo.entity.Course;
 import com.vusalaxndzde.cruddemo.entity.Instructor;
 import com.vusalaxndzde.cruddemo.entity.InstructorDetail;
 import jakarta.persistence.EntityManager;
@@ -44,6 +45,12 @@ public class AppDAOImpl implements AppDAO {
         InstructorDetail instructorDetail = entityManager.find(InstructorDetail.class, id);
         instructorDetail.getInstructor().setInstructorDetail(null);
         entityManager.remove(instructorDetail);
+    }
+
+    @Override
+    @Transactional
+    public void saveCourse(Course course) {
+        entityManager.persist(course);
     }
 
 }

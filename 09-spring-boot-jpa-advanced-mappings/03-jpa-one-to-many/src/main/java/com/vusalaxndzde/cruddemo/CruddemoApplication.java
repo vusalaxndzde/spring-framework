@@ -1,12 +1,16 @@
 package com.vusalaxndzde.cruddemo;
 
 import com.vusalaxndzde.cruddemo.dao.AppDAO;
+import com.vusalaxndzde.cruddemo.entity.Course;
 import com.vusalaxndzde.cruddemo.entity.Instructor;
 import com.vusalaxndzde.cruddemo.entity.InstructorDetail;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class CruddemoApplication {
@@ -26,8 +30,40 @@ public class CruddemoApplication {
 
 //			findInstructorDetail(appDAO);
 
-			deleteInstructorDetail(appDAO);
+//			deleteInstructorDetail(appDAO);
+
+//			createInstructorWithCourses(appDAO);
+
+			createCourse(appDAO);
+
 		};
+	}
+
+	private void createCourse(AppDAO appDAO) {
+		Course course = new Course("Fullstack");
+
+		course.setInstructor(new Instructor("Vusal3", "Akhundzada3", "vusal@gmail.com"));
+
+		appDAO.saveCourse(course);
+	}
+
+	private void createInstructorWithCourses(AppDAO appDAO) {
+		Instructor instructor = new Instructor(
+				"Vusal1", "Akhundzada1", "vusal@gmail.com");
+
+		InstructorDetail instructorDetail = new InstructorDetail(
+				"youtube.com", "football");
+
+		instructor.setInstructorDetail(instructorDetail);
+
+		Course course1 = new Course("Backend");
+		Course course2 = new Course("Frontend");
+
+		instructor.addCourse(course1);
+		instructor.addCourse(course2);
+
+		appDAO.save(instructor);
+		System.out.println("Done!");
 	}
 
 	private void deleteInstructorDetail(AppDAO appDAO) {

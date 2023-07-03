@@ -1,5 +1,6 @@
 package com.vusalaxndzde.cruddemo.dao;
 
+import com.vusalaxndzde.cruddemo.entity.Course;
 import com.vusalaxndzde.cruddemo.entity.Instructor;
 import com.vusalaxndzde.cruddemo.entity.InstructorDetail;
 
@@ -14,5 +15,7 @@ public interface AppDAO {
     InstructorDetail findInstructorDetailById(int id);
 
     void deleteInstructorDetailById(int id);
+
+    void saveCourse(Course course);
 
 }
